@@ -29,7 +29,7 @@ jobs:
         run: python download_instagram.py  # Run the script to download images
 
       - name: Upload images as artifacts
-        uses: actions/upload-artifact@v2  # Use the stable v2 version
+        uses: actions/upload-artifact@v4  # Use the latest stable version (v4)
         with:
           name: instagram-images
           path: downloads/cutu_afrin/  # Path to the folder where images are stored
